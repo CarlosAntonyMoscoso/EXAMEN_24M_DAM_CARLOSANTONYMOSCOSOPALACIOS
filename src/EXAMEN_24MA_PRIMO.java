@@ -7,7 +7,28 @@ public class EXAMEN_24MA_PRIMO {
 	
 		System.out.println("Buenos dias Ceinmark, soy Carlos Antony");
 		System.out.println("Introduce un numero para averiguar si es primo o no :");
-		int num = ent.nextInt();
+		
+		 int contador,I,numero;
+		 
+	        System.out.print("Ingresa un numero: ");
+	        numero = ent.nextInt();
+	 
+	        contador = 0;
+	 
+	        for(I = 1; I <= numero; I++)
+	        {
+	            if((numero % I) == 0)
+	            {
+	                contador++;
+	            }
+	        }
+	 
+	        if(contador <= 2)
+	        {
+	            System.out.println("El numero es primo");
+	        }else{
+	            System.out.println("El numero no es primo");
+	        }
 	}
 
 }
